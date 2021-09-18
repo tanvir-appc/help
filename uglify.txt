@@ -1,0 +1,18 @@
+>install uglifyjs and uglifycss
+
+npm install -g uglifyjs
+npm install -g uglifycss
+
+
+>use uglifyjs to minify and combine js fines inside a folder
+
+>all js files
+uglifyjs --compress --mangle --output merged.min.js -- *.js
+
+>specific files
+uglifyjs --compress --mangle --output merged.min.js -- file1.js file2.js
+
+>use uglifycss to minify and combine all css files inside a folder
+
+>all css files
+uglifycss *.css > merged.min.css
