@@ -1,0 +1,11 @@
+code preview not loading after Xcode 13.2 installation
+says can't build content.view
+
+Solution:
+
+Run the following commands
+
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -license
+
+keep hitting spaces and type agree to enable license
