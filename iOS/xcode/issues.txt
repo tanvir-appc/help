@@ -9,3 +9,13 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -license
 
 keep hitting spaces and type agree to enable license
+
+didn't work? then try
+
+rm -rf "$TMPDIR/../C/clang/ModuleCache"
+
+didn't work? then try
+
+Xcode - Preferences -> Locations and assigning the Command Line Tools to Xcode 13.2 or the current version.
+
+clearning the clang cache worked for me
