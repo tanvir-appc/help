@@ -1,0 +1,10 @@
+//return JSX
+const App = () => ( <div>this is jsx</div> )
+
+//return jsx with computation
+const App = () => {
+const a = 10
+const b = 20
+return ( A is {a} and b is {b} )
+
+}
