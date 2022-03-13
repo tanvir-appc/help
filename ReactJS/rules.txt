@@ -1,3 +1,5 @@
+##rule1
+
 //return JSX
 const App = () => ( <div>this is jsx</div> )
 
@@ -8,3 +10,11 @@ const b = 20
 return ( A is {a} and b is {b} )
 
 }
+
+
+##rule2
+every tag must be closed
+in html
+<br>
+in jsx
+<br />
