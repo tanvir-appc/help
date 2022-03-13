@@ -54,3 +54,7 @@ const App = () => {
   )
 }
 
+
+##rule5
+react try to adhere to functional programming's immutable architecture
+so use concat to create new array instead of push
