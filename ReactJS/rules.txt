@@ -58,3 +58,6 @@ const App = () => {
 ##rule5
 react try to adhere to functional programming's immutable architecture
 so use concat to create new array instead of push
+
+##rule6
+it is forbidden in React to mutate state directly
