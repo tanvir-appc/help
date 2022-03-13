@@ -18,3 +18,39 @@ in html
 <br>
 in jsx
 <br />
+
+##rule3
+component names must be capitalized
+<app> is not acceptable but <App> is perfectly fine
+
+##rule4
+The content of a react element must be enclosed with a root element. so we wrap them with a div with no attributes like
+<div>
+  <p> hello world</p>
+ </div>
+ 
+ Alternative is to pass an array of elements
+ const App = () => {
+  return [
+    <h1>Greetings</h1>,
+    <Hello name="Maya" age={26 + 10} />,
+    <Footer />
+  ]
+}
+
+
+better alternative is to use fragments enclosing with <></>
+const App = () => {
+  const name = 'Peter'
+  const age = 10
+
+  return (
+    <>
+      <h1>Greetings</h1>
+      <Hello name="Maya" age={26 + 10} />
+      <Hello name={name} age={age} />
+      <Footer />
+    </>
+  )
+}
+
