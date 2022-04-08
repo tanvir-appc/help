@@ -1,0 +1,2 @@
+// pull a remote branch and create it locally at the same time
+git switch -c remote_branch origin/remote_branch
