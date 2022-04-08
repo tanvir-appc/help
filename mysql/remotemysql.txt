@@ -1,0 +1,4 @@
+mysql -u wellborngroup_mesn -p 'wellborngroup_mesn' -h 107.161.23.171 -P 3306 -D wellborngroup_mesn < mesnja_develop.sql
+
+
+// give password on prompt
