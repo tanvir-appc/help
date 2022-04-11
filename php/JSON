@@ -1,0 +1,4 @@
+if you send data from javascript as JSON.stringify string, php won't be able to convert this directly and quotes will get messed up. First use stripslashes on the string and then try to decode and encode again. if wordpress then use wp_json_encode() in the final step. example:
+
+$decodedFormData = json_decode(stripslashes($formData));
+$formData = wp_json_encode($decodedFormData);
